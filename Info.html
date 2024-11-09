@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Webpage</title>
+    <link rel="stylesheet" href="CSSAKAStyle.css">
+</head>
+<!--PDF FILE IS SO GREAT-->
+<body>
+    <div class="header">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <h1>Learn about technology</h1>
+    </div>
+    <br>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">✖ Close</span>
+        <a href="#PDF">PDF</a>
+        <a href="#settings">Go back</a>
+    </div>
+
+    <div class="content" id="content">
+        
+        <div id="home" class="dashboard-section">
+            <h2>How to keep learning new technology easily and lifelong</h2>
+            <p>In today's fast-paced world, technology is constantly evolving, and it's essential to keep up with the latest trends to stay relevant in the industry. However, the idea of learning new technologies throughout one's life can seem daunting, especially with the amount of information available on the internet. But it doesn't have to be that way. Here are some tips on how to keep learning new technologies easily and lifelong.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>1. Develop a curious mindset</h2>
+            <p>The first step to learning new technologies is to develop a curious mindset. Be curious about how things work and what technology can do for you. This mindset will help you to stay motivated and eager to learn new things. If you are curious, you will naturally seek out information and opportunities to learn.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>2. Stay Informed</h2>
+            <p>Stay informed about the latest trends and innovations in technology. This can be done by reading tech blogs, subscribing to technology news sites, following industry influencers on social media, and attending technology conferences. This will help you to stay up-to-date with the latest developments and provide you with ideas on what to learn next.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>3. Experiment with new technologies</h2>
+            <p>Experimentation is a great way to learn new technologies. Sign up for free trials, download open-source software, and test new tools and frameworks. By experimenting, you'll get hands-on experience with new technologies and gain a deeper understanding of how they work.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>4. Join a community</h2>
+            <p>Joining a community of like-minded individuals who are also interested in learning new technologies is an excellent way to stay motivated and engaged. Join online forums, participate in discussion groups, and attend meetups to connect with others who share your passion for technology. You'll also get access to valuable resources, such as tutorials and online courses.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>5. Take online courses</h2>
+            <p>Taking online courses is a great way to learn new technologies. There are a plethora of courses available on platforms like Coursera, Udemy, and edX. These courses are often self-paced, allowing you to learn at your own pace, and many of them offer certification upon completion.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>6. Find a mentor</h2>
+            <p>Finding a mentor who is experienced in the technologies you want to learn can be incredibly helpful. A mentor can provide guidance, answer your questions, and offer feedback on your progress. They can also provide you with valuable insights into the industry and help you to network with other professionals.</p>
+        </div>
+
+        <div id="" class="dashboard-section">
+            <h2>7. Set goals</h2>
+            <p>Setting goals is an essential part of the learning process. It helps you to stay focused and motivated. Start by setting small, achievable goals, such as learning a new programming language or completing a specific project. As you achieve your goals, set more challenging ones to keep yourself motivated and engaged.</p>
+        </div>
+
+        <a href="Pdf.html" style="text-decoration: none;">
+            <div id="PDF" class="dashboard-section">
+                <h2>PDF version</h2>
+                <p>This will give you the PDF verstion</p>
+            </div>
+        </a>
+
+        <hr>
+
+        <a href="BuildPC.html" style="text-decoration: none;">
+            <div id="" class="dashboard-section">
+                <h2>Learn How to build PC</h2>
+                <p>This section here you can learn how to build a pc or learn the basic parts of the pc</p>
+            </div>
+        </a>
+
+        <a href="index.html" style="text-decoration: none; color: rgb(209, 44, 44);">
+            <div id="settings" class="dashboard-section">
+                <h2>Go Back</h2>
+                <p>This will put you back to home page</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("active");
+            content.classList.toggle("shifted");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Webpage</title>
+    <link rel="stylesheet" href="CSSAKAStyle.css">
+</head>
+<!--HT-->
+<body>
+    <div class="header">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <h1>About the page</h1>
+    </div>
+    <br>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">✖ Close</span>
+        <a href="#home">About</a>
+        <a href="#settings">Go back</a>
+    </div>
+
+    <div class="content" id="content">
+        
+        <div id="home" class="dashboard-section">
+            <h2>The Creator:</h2>
+            <p>Martinez Renz N.</p>
+            <h2>About the Website and history:</h2>
+            <p>This website has been created for the soul purpuse of getting graded but This website also have information that you can learn from or use.</p>
+            <p>The Creation of this website is for you to use the information that it has and use it to your daily activity and also learn about the basic technologies like computers or a controller. This website has no ads so you don't need to be bothered with any.</p>
+            <p>Sadly this website is still on demo if you want to see more features then come and donate to support me on creating this webstie.<a href="https://www.paypal.com/paypalme/RenzMartinezGamer" style="text-decoration: none;">Just click here</a></p>
+            <h3>Reason why you should use this website</h3>
+            <ol>
+                <li>This Website can be use to obtain inforamtion.</li>
+                <li>This Website can also give you inforamtion that you need.</li>
+                <li>This website might be useful to you or your family.</li>
+                <li>There is no ads</li>
+            </ol>
+            <h3> How to use the Website:</h3>
+            <ol>
+                <li>First one the <a href="index.html" style="text-decoration: none;">Homepage</a> You will be able to see buttons/ things on where you want to go.</li>
+                <li>If you are on the Homepage you can clik on <a href="Info.html" style="text-decoration: none;">learn technology</a> That is where you can learn about tech and how to keep learning them or you can go clik on <a href="More.html" style="text-decoration: none;">More</a> Where you can learn more.</li>
+                <li>There is also PDF verstion of the inforamtion you are reading upon, if the sourse is not available you can go to the PDF verstion under the inforamtion.</li>
+            </ol>
+        </div>
+        <a href="Doc.html" style="text-decoration: none;">
+            <div id="settings" class="dashboard-section">
+                <h2>Documentation on the Website</h2>
+                <p>This is the documentation of the website feel free to check it out</p>
+            </div>
+        </a>
+
+        <hr>
+
+        <a href="index.html" style="text-decoration: none; color: rgb(209, 44, 44);">
+            <div id="settings" class="dashboard-section">
+                <h2>Go Back to Homepage</h2>
+                <p>This will put you back to home page</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("active");
+            content.classList.toggle("shifted");
+        }
+    </script>
+</body>
+</html>

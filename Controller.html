@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Webpage</title>
+    <link rel="stylesheet" href="CSSAKAStyle.css">
+</head>
+<!--HT-->
+<body>
+    <div class="header">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <h1>How to use a controller</h1>
+    </div>
+    <br>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">✖ Close</span>
+        <a href="#home">Setting</a>
+        <a href="#settings">Go back</a>
+    </div>
+
+    <div class="content" id="content">
+        
+        <div id="home" class="dashboard-section">
+            <h2>How to use game controllers in Windows 11</h2>
+            <p>If you’re a console gamer looking to play PC games with a controller, you’re in luck! Your gaming controller should pair effortlessly with your Windows 11 PC. Learn how to play PC games with a controller and customize your controller to game your way.</p>
+            <h3>How to connect your controller to your PC</h3>
+            <p>Connecting a gaming controller to your Windows 11 computer couldn’t be easier. Whether your controller supports Bluetooth or not, we have you covered.</p>
+            <h4>Connect a wired controller</h4>
+            <p>If you’re using a wired controller, simply plug it into your PC via USB. Your PC should recognize your wired device right away and prompt you if an additional driver download is needed.</p>
+            <h4>Connect a wireless controller</h4>
+            <p>Many newer gaming controllers can be connected via Bluetooth. To connect this type of controller, follow these easy steps:</p>
+            <ol>
+                <li>Enter Bluetooth into your Windows search bar and make sure Bluetooth discovery is enabled.</li>
+                <li>Turn on your controller.</li>
+                <li>Press and hold the Sync button on the top until the Guide button flashes.</li>
+                <li>In the Bluetooth menu on your PC, select Add device and your computer will start looking for your controller.</li>
+                <li>When it’s found, you can choose your controller from the results and then select Done to complete the setup.</li>
+            </ol>
+            <p>If your controller is a little older, you may need a wireless adaptor, which you’ll insert into an available port on your PC. If the adapter features a sync button, press that before turning on and syncing your controller. From there, you should be able to add this device from your Bluetooth menu.</p>
+            <h2>What games can I play on Windows 11?</h2>
+            <p>Windows 11 is the ultimate operating system for PC gaming and audio immersion. With options like PC Game Pass, which is available for a small monthly fee, you can play a suite of high-quality games on your PC directly through your Microsoft account. Choose from indie games, franchise favorites, and big-name blockbusters!</p>
+            <h2>How to customize your game controller</h2>
+            <p>If you need to customize your game controller for your Windows 11 PC, you can launch Game Controller settings:</p>
+            <ol>
+                <li>Select Windows + Q on your PC’s keyboard.</li>
+                <li>Enter USB game controllers in the search box and choose the controller you want.</li>
+            </ol>
+            <p>From here, you can access your controller’s settings and customize it to your own preferences. This includes assigning buttons, swapping triggers, and choosing the strength of haptics. If you’re gaming with an Xbox controller, you can also use the Xbox Accessories app to adjust these settings as well as create and edit controller profiles.</p>
+            <h2>Frequently asked questions</h2>
+            <h4>Why isn’t the Xbox Game Bar working when I use my controller on my PC?</h4>
+            <p>If your Xbox Game Bar isn’t working on your Windows 11 PC, try the following:</p>
+            <ul>
+                <li>Check your Game Bar settings. Select the start button on your controller, then choose Settings. Navigate to Gaming > Xbox Game Bar, then enable Record game clips, screenshots, and broadcast using Game Bar.</li>
+                <li>During the game, select the keyboard shortcut Windows logo key + G to open the Game Bar. Select Enable gaming features for this app to record gameplay to use gaming features including broadcasting or capturing.</li>
+            </ul>
+            <h3>Can I use my Xbox controller on my PC?</h3>
+            <p>Yes! Many popular PC games can be played with an Xbox controller instead of your usual computer hardware. Connect your controller to your Windows 11 computer via Bluetooth or a USB cable.</p>
+            <h3>How do I turn off my Xbox controller when it’s connected to my PC?</h3>
+            <p>Try one of the following to turn off your Xbox controller:</p>
+            <ul>
+                <li>Press and hold the Xbox button located on top of the controller.</li>
+                <li>Turn off the Bluetooth connection.</li>
+                <li>Unplug the USB cable.</li>
+            </ul>
+            <p>Gone are the days of trying to coordinate your keyboard and mouse to complete quests and pick up loot. Instead, grab your favorite controller and play on your PC with ease. To see more ways to get your gaming on in Windows 11, visit Windows Learning Center.</p>
+
+            <h4>DISCLAIMER:</h4>
+            <p>Features and functionality subject to change. Articles are written specifically for the United States market; features, functionality, and availability may vary by region.</p>
+            <p style="text-align: center; color: #666666;">This information/data is provided by Microsoft</p>
+            
+        </div>
+
+        <hr>
+
+        <a href="index.html" style="text-decoration: none; color: rgb(209, 44, 44);">
+            <div id="settings" class="dashboard-section">
+                <h2>Go Back to Homepage</h2>
+                <p>This will put you back to home page</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("active");
+            content.classList.toggle("shifted");
+        }
+    </script>
+</body>
+</html>

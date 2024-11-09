@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Webpage</title>
+    <link rel="stylesheet" href="CSSAKAStyle.css">
+</head>
+<!--mOreeeee FILE IS SO GREAT-->
+<body>
+    <div class="header">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <h1>More things to learn</h1>
+    </div>
+    <br>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">✖ Close</span>
+        <a href="#home">Top page</a>
+        <a href="#settings">Go back</a>
+    </div>
+
+    <div class="content" id="content">
+        <p><br></p>
+        <a href="BuildPC2.html" style="text-decoration: none;">
+            <div id="" class="dashboard-section">
+                <h2>How to Build a PC</h2>
+                <p>This will give you step by step on how to build a pc</p>
+            </div>
+        </a>
+
+        <a href="Controller.html" style="text-decoration: none;">
+            <div id="home" class="dashboard-section">
+                <h2>How to use a controller on Windows 11</h2>
+                <p>If you click here you will go to a page on how to use a controller</p>
+            </div>
+        </a>
+
+        <hr>
+
+        <a href="index.html" style="text-decoration: none; color: rgb(209, 44, 44);">
+            <div id="settings" class="dashboard-section">
+                <h2>Go Back to Homepage</h2>
+                <p>This will put you back to home page</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("active");
+            content.classList.toggle("shifted");
+        }
+    </script>
+</body>
+</html>
